@@ -25,22 +25,25 @@ def number_guess(num_of_guesses, num):
         if num_of_guesses == 9:
             print("GAME OVER!")
             print("YOU LOSE! BETTER LUCK NEXT TIME. ")
-            break
+            # break
+
+    restart_game()
 
 
-print("WELCOME!\n\t\t\tTHIS IS A NUMBER GUESSING QUIZ AND \b YOU HAVE ONLY 9 LIFE TO WIN.\t\t\t\t  ")
+def restart_game():
+    print("WANT TO PLAY AGAIN?\nType y for yes and n for no : ")
+
+    again_play = input()
+    if again_play == "y":
+
+        number_guess(num_of_guesses, num)
+    else:
+
+        print("THANK YOU FOR PLAYING!!\nCOME BACK SOON.")
+
+
+print("\tWELCOME BUDDY!!\n\t\t\t*****THIS IS A NUMBER GUESSING QUIZ*****\t\t\t\t")
+print("\t\t\t  --TO WIN THIS YOU HAVE ONLY 9 LIFES-- ")
 num = 30
 num_of_guesses = 0
-number_guess(num_of_guesses,num)
-print("WANT TO PLAY AGAIN?\nType y for yes and n for no : ")
-again = input()
-
-if again == "y":
-# while ag ain=='y':
-
-    number_guess(num_of_guesses,num)
-    again.capitalize()
-    # number_guess(num_of_guesses,num)
-else:
-    again.capitalize()
-    print("THANK YOU FOR PLAYING!!\nCOME BACK SOON.")    
+number_guess(num_of_guesses, num)

@@ -83,7 +83,9 @@ def again_play():
         print("Wrong input.Please type 'y' or 'n' only.")
         again_play()
 
-
+from win32com.client import Dispatch
+adi = Dispatch("SAPI.spvoice")
+adi.speak("Welcome to snake water gun game")
 print("\t\t\t****SNAKE WATER GUN GAME****\t\t\t")
 print("WELCOME!")
 game()

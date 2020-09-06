@@ -24,7 +24,7 @@ def number_guess(num_of_guesses, num):
 
         if num_of_guesses == 9:
             print("GAME OVER!")
-            print("YOU LOSE! BETTER LUCK NEXT TIME. ")
+            print("YOU LOSE! BETTER LUCK NEXT TIME.")
             # break
 
     restart_game()

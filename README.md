@@ -1,4 +1,6 @@
 # Python
 Repository to store sample python programs for python learning.
 
-![1_MHKdXAiLHvqiffGTbxsUUw](https://user-images.githubusercontent.com/68494604/92634620-34333500-f2f2-11ea-8d18-1001d0e51495.jpeg)
+![Python-Programming-Examples1](https://user-images.githubusercontent.com/68494604/92634690-49a85f00-f2f2-11ea-9d41-04171c300c0b.png)
+
+

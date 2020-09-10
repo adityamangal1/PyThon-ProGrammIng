@@ -6,7 +6,7 @@
 # print("THE ANSWER IS ", int(adi) + int(adi2))
 
 
-adi = "helloadi how are you."
+adi = "helloaditya how are you."
 # print(adi)
 # print(len(adi))
 # print(adi[10])

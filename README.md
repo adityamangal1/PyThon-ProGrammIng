@@ -11,6 +11,7 @@ Repository to store sample python programs for python learning.Python’s elegan
 <img src="https://github-readme-stats.vercel.app/api?username=adityamangal1&&show_icons=true&title_color=ffffff&icon_color=bb2acf&text_color=daf7dc&bg_color=ffba2c">
 
 
+
 <p align="center">
   Follow Me On
 </p>
@@ -18,4 +19,10 @@ Repository to store sample python programs for python learning.Python’s elegan
   <a href="https://www.instagram.com/adityamangal/">
     <img src="http://clipart-library.com/images_k/instagram-png-transparent/instagram-png-transparent-16.png" width="40" height="40">
     </a>
+</p>
+
+<p align="center">
+  <img alt="Sloan, the sloth mascot" width="250px" src="https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/31047/af153cd6-9994-4a68-83f4-8ddf3e13f0bf.jpg">
+  <br>
+  <strong>Happy Coding</strong> ❤️
 </p>

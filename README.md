@@ -11,7 +11,7 @@ Repository to store sample python programs for python learning.Python’s elegan
 
 ![Python-Programming-Examples1](https://user-images.githubusercontent.com/68494604/92634690-49a85f00-f2f2-11ea-9d41-04171c300c0b.png)
 
-![119813](https://user-images.githubusercontent.com/69212320/91600995-550a9a80-e982-11ea-9001-f84a7552967e.gif)
+![source](https://user-images.githubusercontent.com/68494604/94645884-950ac780-030a-11eb-9c8f-40d9740fc6ad.gif)
 
 <img src="https://github-readme-stats.vercel.app/api?username=adityamangal1&&show_icons=true&title_color=ffffff&icon_color=bb2acf&text_color=daf7dc&bg_color=ffba2c">
 

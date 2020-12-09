@@ -4,7 +4,7 @@
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
 
-Repository to store sample python programs for python learning.Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.Before getting started, you may want to find out which IDEs and text editors are tailored to make Python editing easy, browse the list of introductory books, or look at code samples that you might find helpful.
+Repository to store sample python programs for python learning.Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.Before getting started, you may want to find out which IDEs and text editors are tailored to make Python editing easy, browse the list of introductory books,or look at code samples that you might find helpful.
 </p> 
 <p align="center"><img src="https://img.shields.io/badge/Author-adityamangal-green.svg"> 
 </p>

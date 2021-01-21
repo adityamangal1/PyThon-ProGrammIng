@@ -11,16 +11,14 @@ import os
 
 
 def main():
-    i = 1937
     path = "D:/Mangal/AdI/extra frames/"
-    for filename in os.listdir(path):
+    for i, filename in enumerate(os.listdir(path), start=1937):
         my_dest = "CAGE" + ' ' + str(i) + ".jpeg"
         my_source = path + filename
         my_dest = path + my_dest
         # rename() function will
         # rename all the files
         os.rename(my_source, my_dest)
-        i += 1
     print('Done Bro!!')
 
 

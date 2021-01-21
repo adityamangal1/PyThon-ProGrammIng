@@ -8,5 +8,5 @@ def pillingup():
 
 
 user = int(input())
-for i in range(user):
+for _ in range(user):
     pillingup()

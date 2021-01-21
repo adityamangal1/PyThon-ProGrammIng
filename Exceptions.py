@@ -5,9 +5,10 @@ Purpose: python practise problem
 
 '''
 
+
 user_in = int(input())
 
-for i in range(user_in):
+for _ in range(user_in):
     first, secound = list(map(str, input().split()))
 
     try:

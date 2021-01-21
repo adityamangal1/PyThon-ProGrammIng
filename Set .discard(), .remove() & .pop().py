@@ -3,7 +3,7 @@ if __name__ == "__main__":
     user_list = list(map(int, input().split()))
     user_list = set(user_list)
     n = int(input())
-    for i in range(n):
+    for _ in range(n):
         user_input = input().split()
         if user_input[0] == 'pop':      
             user_list.pop()

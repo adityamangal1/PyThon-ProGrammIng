@@ -3,8 +3,7 @@ import textwrap
 
 def wrap(string, max_width):
 
-    s = textwrap.wrap(string, max_width)
-    return s
+    return textwrap.wrap(string, max_width)
 
 
 if __name__ == '__main__':

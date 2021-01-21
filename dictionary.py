@@ -1,9 +1,13 @@
-adi = {"aditya":"mangal","dipanshu":"goyal"}
+adi = {
+    "aditya": "mangal",
+    "dipanshu": "goyal",
+    "ankush": "chauhan",
+    "rahul": "gaur",
+    100: "corrupts",
+    "police": "corrupts",
+}
 
-adi["ankush"] = "chauhan"
-adi["rahul"] =  "gaur"
-adi[100] = "corrupts"
-adi["police"] = "corrupts"
+
 print(adi.items())
 print(adi.keys())
 

@@ -10,8 +10,6 @@ def product(fracs):
 
 
 if __name__ == '__main__':
-    fracs = []
-    for _ in range(int(input())):
-        fracs.append(Fraction(*map(int, input().split())))
+    fracs = [Fraction(*map(int, input().split())) for _ in range(int(input()))]
     result = product(fracs)
     print(*result)

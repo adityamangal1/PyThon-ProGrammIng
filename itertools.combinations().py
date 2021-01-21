@@ -14,7 +14,7 @@ def combinations_l(num1):
             final = sorted(a1)
         for i in final:
             print(i)
-        b = b + 1
+        b += 1
         if b > int(num1):
             break
 

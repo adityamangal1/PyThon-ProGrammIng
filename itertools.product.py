@@ -12,8 +12,7 @@ def product_lists(A, B):
 
     a = list(product(A, B))
     convert_list = list(map(str, a))
-    final_list = ' '.join(convert_list)
-    return final_list
+    return ' '.join(convert_list)
 
 
 x = a1, *a2 = input().split()

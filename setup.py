@@ -25,13 +25,13 @@ with open('HISTORY.rst') as history_file:
 
 # OS specific settings
 SET_REQUIRES = []
-if _platform == "linux" or _platform == "linux2":
-   # linux
-   print('linux')
-elif _platform == "darwin":
-   # MAC OS X
-   SET_REQUIRES.append('py2app')
+if _platform == "darwin":
+    # MAC OS X
+    SET_REQUIRES.append('py2app')
 
+elif _platform in ["linux", "linux2"]:
+    # linux
+    print('linux')
 required_packages = find_packages()
 required_packages.append('labelImg')
 
@@ -65,8 +65,6 @@ class UploadCommand(Command):
             rmtree(os.path.join(here, 'dist'))
         except OSError:
             self.status('Fail to remove previous builds..')
-            pass
-
         self.status('Building Source and Wheel (universal) distribution…')
         os.system(
             '{0} setup.py sdist bdist_wheel --universal'.format(sys.executable))

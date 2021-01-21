@@ -2,7 +2,7 @@ if __name__ == "__main__":
 
     final_list = []
     n = int(input())
-    for i in range(n):
+    for _ in range(n):
 
         user_input = input().split()
 

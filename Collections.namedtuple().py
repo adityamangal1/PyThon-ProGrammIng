@@ -5,9 +5,6 @@ data = namedtuple('data', input().split())
 
 # print(data(*input().split().MARKS))
 
-s = 0
-for i in range(user):
-    s += int(data(*input().split()).MARKS)
-
+s = sum(int(data(*input().split()).MARKS) for _ in range(user))
 print(s/user)
 

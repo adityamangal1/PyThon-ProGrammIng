@@ -10,8 +10,7 @@ Purpose: python practise problem
 def average(array):
 
     a = set(array)
-    b = (sum(a))/len(a)
-    return b
+    return (sum(a))/len(a)
 
 
 if __name__ == '__main__':

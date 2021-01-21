@@ -12,7 +12,7 @@ def iter_method(number):
     prevnum = 0
     currentnum = 1
 
-    for i in range(1, number):
+    for _ in range(1, number):
         prevprevnum = prevnum
         prevnum = currentnum
         currentnum = prevprevnum + prevnum

@@ -1,7 +1,7 @@
 marksheet = []
 scores = []
 n = int(input())
-for i in range(n):
+for _ in range(n):
     name = input()
     score = float(input())
     marksheet += [[name, score]]

@@ -98,14 +98,6 @@ if __name__ == "__main__":
         print(
             f'Player1 is winner as he guessed number earlier in {Player_1}.\n')
 
-    elif Player_2 > Player_1:
-        print(
-            f'Player1 is winner as he guessed number earlier in {Player_1}.\n')
-
-    elif Player_2 < Player_1:
-        print(
-            f'Player2 is winner as he guessed number earlier in {Player_2}.\n')
-
     elif Player_1 == Player_2:
         print('Match Draw.\n')
         print(f'Player1 guessed it in {Player_1}.\n')

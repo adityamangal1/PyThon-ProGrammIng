@@ -2,7 +2,7 @@ marksheet = []
 scores = []
 dict1 = {}
 user = int(input())
-for i in range(user):
+for _ in range(user):
     x = name, *score = input().split()
     b = list(map(float, score))
     dict1[name] = b

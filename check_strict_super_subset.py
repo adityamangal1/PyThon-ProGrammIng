@@ -1,7 +1,7 @@
 set1 = set(list(map(int, input().split())))
 user = int(input())
 new_list =[]
-for i in range(user):
+for _ in range(user):
     set2 = set(list(map(int, input().split())))
     new_list.append(set2)
 

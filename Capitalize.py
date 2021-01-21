@@ -9,20 +9,16 @@ import sys
 
 def solve(s):
     # list1 = []
-    for i in range(len(s)):
+    for _ in range(len(s)):
         # list1.append(s[i].capitalize())
         list1 = [word.capitalize() for word in s.split(' ')]
-    a = (' '.join(list1))
-    return a
+    return (' '.join(list1))
 
 
 if __name__ == '__main__':
-    fptr = open(os.environ['hello'], 'w')
+    with open(os.environ['hello'], 'w') as fptr:
+        s = input()
 
-    s = input()
+        result = solve(s)
 
-    result = solve(s)
-
-    fptr.write(result + '\n')
-
-    fptr.close()
+        fptr.write(result + '\n')

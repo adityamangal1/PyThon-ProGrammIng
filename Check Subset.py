@@ -7,5 +7,5 @@ def checking_subset():
 
 
 user = int(input())
-for i in range(user):
+for _ in range(user):
     checking_subset()

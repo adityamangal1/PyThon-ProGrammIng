@@ -4,10 +4,11 @@ Date:  5 october,2020
 Purpose: python practise problem
 
 '''
+
 import re
 
 user = int(input())
-for i in range(user):
+for _ in range(user):
 
     try:
 

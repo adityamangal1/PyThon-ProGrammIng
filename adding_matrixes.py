@@ -23,10 +23,7 @@ def sum(A, B):
     output2 = []
 
     for i in range(len(A)):
-        row2 = []
-        for j in range(len(A[0])):
-            row2.append(A[i][j] + B[i][j])
-
+        row2 = [A[i][j] + B[i][j] for j in range(len(A[0]))]
         output2.append(row2)
 
     return output2

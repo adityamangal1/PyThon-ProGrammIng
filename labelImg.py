@@ -1174,7 +1174,7 @@ class MainWindow(QMainWindow, WindowMixin):
         settings = self.settings
         # If it loads images from dir, don't load it at the begining
         if self.dirname is None:
-            settings[SETTING_FILENAME] = self.filePath if self.filePath else ''
+            settings[SETTING_FILENAME] = self.filePath or ''
         else:
             settings[SETTING_FILENAME] = ''
 
@@ -1220,11 +1220,7 @@ class MainWindow(QMainWindow, WindowMixin):
         return images
 
     def changeSavedirDialog(self, _value=False):
-        if self.defaultSaveDir is not None:
-            path = ustr(self.defaultSaveDir)
-        else:
-            path = '.'
-
+        path = ustr(self.defaultSaveDir) if self.defaultSaveDir is not None else '.'
         dirpath = ustr(QFileDialog.getExistingDirectory(self,
                                                        '%s - Save annotations to the directory' % __appname__, path,  QFileDialog.ShowDirsOnly
                                                        | QFileDialog.DontResolveSymlinks))
@@ -1247,16 +1243,15 @@ class MainWindow(QMainWindow, WindowMixin):
         if self.labelFileFormat == LabelFileFormat.PASCAL_VOC:
             filters = "Open Annotation XML file (%s)" % ' '.join(['*.xml'])
             filename = ustr(QFileDialog.getOpenFileName(self,'%s - Choose a xml file' % __appname__, path, filters))
-            if filename:
-                if isinstance(filename, (tuple, list)):
-                    filename = filename[0]
+            if filename and isinstance(filename, (tuple, list)):
+                filename = filename[0]
             self.loadPascalXMLByFilename(filename)
 
     def openDirDialog(self, _value=False, dirpath=None, silent=False):
         if not self.mayContinue():
             return
 
-        defaultOpenDirPath = dirpath if dirpath else '.'
+        defaultOpenDirPath = dirpath or '.'
         if self.lastOpenDir and os.path.exists(self.lastOpenDir):
             defaultOpenDirPath = self.lastOpenDir
         else:
@@ -1322,7 +1317,7 @@ class MainWindow(QMainWindow, WindowMixin):
             return
 
         currIndex = self.mImgList.index(self.filePath)
-        if currIndex - 1 >= 0:
+        if currIndex >= 1:
             filename = self.mImgList[currIndex - 1]
             if filename:
                 self.loadFile(filename)
@@ -1435,15 +1430,14 @@ class MainWindow(QMainWindow, WindowMixin):
     def mayContinue(self):
         if not self.dirty:
             return True
+        discardChanges = self.discardChangesDialog()
+        if discardChanges == QMessageBox.No:
+            return True
+        elif discardChanges == QMessageBox.Yes:
+            self.saveFile()
+            return True
         else:
-            discardChanges = self.discardChangesDialog()
-            if discardChanges == QMessageBox.No:
-                return True
-            elif discardChanges == QMessageBox.Yes:
-                self.saveFile()
-                return True
-            else:
-                return False
+            return False
 
     def discardChangesDialog(self):
         yes, no, cancel = QMessageBox.Yes, QMessageBox.No, QMessageBox.Cancel
@@ -1550,7 +1544,7 @@ class MainWindow(QMainWindow, WindowMixin):
 
     def copyPreviousBoundingBoxes(self):
         currIndex = self.mImgList.index(self.filePath)
-        if currIndex - 1 >= 0:
+        if currIndex >= 1:
             prevFilePath = self.mImgList[currIndex - 1]
             self.showBoundingBoxFromAnnotationFile(prevFilePath)
             self.saveFile()

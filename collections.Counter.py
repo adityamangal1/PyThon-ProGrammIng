@@ -4,6 +4,7 @@ Date:  5 october,2020
 Purpose: python practise problem
 
 '''
+
 from collections import Counter
 
 user = int(input())
@@ -14,11 +15,11 @@ dict = Counter(l1)
 userin = int(input())
 p = 0
 print(dict)
-for i in range(userin):
+for _ in range(userin):
     shoe, cost = list(map(int, input().split()))
     if dict[shoe]:
         dict[shoe] -= 1
-        p = p + cost
+        p += cost
         print(dict)
 
 

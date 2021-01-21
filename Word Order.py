@@ -1,7 +1,7 @@
 from collections import Counter
 user = int(input())
 list1 = []
-for i in range(user):
+for _ in range(user):
     user1 = input()
     list1.append(user1)
 

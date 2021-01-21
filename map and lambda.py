@@ -29,36 +29,37 @@
 def isBalanced(s):
     a = []
     for i in range(len(s)):
-        if s[i] == '{' or s[i] == '[' or s[i] == '(':
+        if s[i] in ['{', '[', '(']:
             a.append(s[i])
         if s[i] == '}':
-            if len(a) == 0:
-                return "NO"
-            else:
+            if a:
                 if a[-1] == '{':
                     a.pop()
                 else:
                     break
-        if s[i] == ']':
-            if len(a) == 0:
-                return "NO"
             else:
+                return "NO"
+        if s[i] == ']':
+            if a:
                 if a[-1] == '[':
                     a.pop()
                 else:
                     break
-        if s[i] == ')':
-            if len(a) == 0:
-                return "NO"
             else:
+                return "NO"
+        if s[i] == ')':
+            if a:
                 if a[-1] == '(':
                     a.pop()
                 else:
                     break
-    if len(a) == 0:
-        return "YES"
-    else:
+            else:
+                return "NO"
+    if a:
         return "NO"
+
+    else:
+        return "YES"
 
 
 inp = input('Enter your query string: ')

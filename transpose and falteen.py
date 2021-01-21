@@ -1,7 +1,7 @@
 import numpy
 size1, size2 = list(map(int, input().split()))
 l1 = []
-for i in range(size1):
+for _ in range(size1):
     user = list(map(int, input().split()))
     l1.append(user)
 print(user[0])

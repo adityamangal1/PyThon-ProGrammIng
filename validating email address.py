@@ -8,28 +8,17 @@ def fun(s):
     except:
         return False
 
-    if 'rase23@ha_ch' in username:
+    if 'rase23@ha_ch' in username or len(extension) > 3:
         return False
 
-    elif len(extension) > 3:
+    appearencec_want = 1
+    appearencec = sum(i is '@' for i in username)
+    if appearencec != appearencec_want:
+
         return False
 
-    else:
-
-        appearencec_want = 1
-        appearencec = 0
-        for i in username:
-            if i is '@':
-                appearencec += 1
-            else:
-                pass
-        if appearencec != appearencec_want:
-
-            return False
-
-        else:
-            pattern = r'[a-z]+[-_]*[a-z]*[0-9]*[-_]*@[a-z]+[0-9]*.[a-z]+'
-            return bool(re.search(pattern, s))
+    pattern = r'[a-z]+[-_]*[a-z]*[0-9]*[-_]*@[a-z]+[0-9]*.[a-z]+'
+    return bool(re.search(pattern, s))
 
 
 def filter_mail(emails):
@@ -38,10 +27,7 @@ def filter_mail(emails):
 
 if __name__ == '__main__':
     n = int(input())
-    emails = []
-    for _ in range(n):
-        emails.append(input())
-
+    emails = [input() for _ in range(n)]
 filtered_emails = filter_mail(emails)
 filtered_emails.sort()
 print(filtered_emails)

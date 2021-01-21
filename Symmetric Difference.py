@@ -4,10 +4,7 @@ usrer_in2 = int(input())
 set2 = set(list(map(int, input().split())))
 a = sorted(set1.difference(set2))
 b = sorted(set2.difference(set1))
-final_list = []
-for i in range(len(a)):
-    final_list.append(a[i])
-
+final_list = [a[i] for i in range(len(a))]
 for i in range(len(b)):
     final_list.append(b[i])
 

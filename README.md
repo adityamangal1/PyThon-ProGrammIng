@@ -10,6 +10,11 @@ Repository to store sample python programs for python learning.Python’s elegan
 
 ![Python-Programming-Examples1](https://user-images.githubusercontent.com/68494604/92634690-49a85f00-f2f2-11ea-9d41-04171c300c0b.png)
 
+
+# Want to install pip? It is used to install and manage software packages. It is a package-management system written in Python
+## Run the pip file after download from repo in the command line
+
+
 ![source](https://user-images.githubusercontent.com/68494604/94645884-950ac780-030a-11eb-9c8f-40d9740fc6ad.gif)
 
 <img src="https://github-readme-stats.vercel.app/api?username=adityamangal1&&show_icons=true&title_color=ffffff&icon_color=bb2acf&text_color=daf7dc&bg_color=ffba2c">
